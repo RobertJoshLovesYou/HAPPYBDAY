@@ -7,17 +7,24 @@
 body {
   background-color: #830736;
 }
+
+.music{
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+}
 .card {
   width: 640px;
   height: 400px;
   position: absolute;
   margin: auto;
-  left: 3;
+  left: 1;
   right: 0;
   top: 0;
   bottom: 0;
   -webkit-perspective: 1200px;
-  perspective: 1200px;
+  perspective: 1000px;
   transition: 1s;
 }
 .card:hover {
@@ -31,7 +38,7 @@ body {
   height: 100%;
   width: 50%;
   position: absolute;
-  left: 47.1%;
+  left: 46.1%;
 }
 .inside {
   background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
@@ -42,7 +49,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  left: 47%;
+  left: 46%;
 }
 .outside {
   -webkit-transform-style: preserve-3d;
@@ -141,22 +148,7 @@ body {
 }
 
 
-  /*desktop*/
-  @media screen and (max-width: 1000px) {
-    .content {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  /*tablet*/
-  @media screen and (max-width: 700px) {
-    .content {
-      display: flex;
-      flex-direction: column;
-    }
-    
-  }
-  /*cp*/
+ 
   @media screen and (max-width: 300px) {
     .navbar {
       display: flex;
@@ -168,8 +160,6 @@ body {
       align-items: center;
     }
   
-  }
-  }
 }
 #splash {
   position: fixed; top: 0; left: 0; z-index: 999;
